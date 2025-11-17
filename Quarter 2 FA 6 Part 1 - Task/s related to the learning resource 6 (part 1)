@@ -1,0 +1,48 @@
+grocery_list = ["eggs", "milk", "bread"]
+
+grocery_list.append("butter")
+print("After adding butter:", grocery_list)
+
+removed_item = grocery_list.pop()
+print("After removing the last item:", grocery_list)
+print("Removed:", removed_item)
+
+item_to_find = "milk"
+position = grocery_list.index(item_to_find)
+print(f"'{item_to_find}' is at position:", position)
+Playlist:
+playlist = ["Red Sun in the Sky", "Erika", "Panzerkampf", "Chairman Mao's Radiance", "Dancin"]
+
+playlist.sort()
+print("Playlist sorted A-Z:", playlist)
+
+playlist.sort(reverse=True)
+print("Playlist sorted Z-A:", playlist)
+
+playlist.reverse()
+print("Playlist reversed:", playlist)
+Schedule Organizer:
+schedule = ["Wake up", "Eat breakfast", "Study", "Exercise", "Sleep"]
+
+schedule.sort()
+print("Schedule sorted by priority:", schedule)
+
+cancelled_task = "Exercise"
+if cancelled_task in schedule:
+    schedule.remove(cancelled_task)
+print("After removing cancelled task:", schedule)
+
+schedule.insert(1, "Take a shower")
+print("After inserting new task:", schedule)
+Friend List:
+friend_list = ["Lemuel", "Egaran", "NPC 567"]
+
+new_friend = "Juancho"
+
+if new_friend not in friend_list:
+    friend_list.append(new_friend)  
+    print(f"{new_friend} added to your friend list.")
+else:
+    print(f"{new_friend} is already in your friend list.")
+
+print("Current friend list:", friend_list)
