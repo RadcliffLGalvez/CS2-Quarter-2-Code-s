@@ -1,0 +1,40 @@
+exam_scores = [88, 92, 75, 92, 68, 88, 100]
+
+highest_score = max(exam_scores)
+lowest_score = min(exam_scores)
+sorted_scores = sorted(exam_scores)
+unique_scores = list(set(exam_scores))
+
+print(highest_score)
+print(lowest_score)
+print(sorted_scores)
+print(unique_scores)
+
+
+char_array = ['h', 'e', 'l', 'l', 'o']
+
+char_count = len(char_array)
+reversed_chars = char_array[::-1]
+joined_string = ''.join(char_array)
+
+print(char_count)
+print(reversed_chars)
+print(joined_string)
+
+itinerary = ["Paris", "Rome", "Berlin"]
+
+itinerary.insert(0, "London")
+itinerary.pop()
+is_in_itinerary = "Rome" in itinerary
+
+print(itinerary)
+print(is_in_itinerary)
+
+
+student_names = ["Zoro", "Lemuel", "Armen", "Ereh", "Olives", "Mao", "Frankenstein"]
+
+alphabetical_names = sorted(student_names)
+top_5_names = alphabetical_names[:5]
+
+print(alphabetical_names)
+print(top_5_names)
