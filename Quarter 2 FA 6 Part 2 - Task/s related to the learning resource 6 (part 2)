@@ -1,40 +1,36 @@
-exam_scores = [88, 92, 75, 92, 68, 88, 100]
+     Given an array of exam scores:
 
-highest_score = max(exam_scores)
-lowest_score = min(exam_scores)
-sorted_scores = sorted(exam_scores)
-unique_scores = list(set(exam_scores))
+To find the highest and lowest scores, you can use methods like Math.max() and Math.min() together with the spread operator to scan through the entire array.
+These functions quickly return the largest and smallest values.
 
-print(highest_score)
-print(lowest_score)
-print(sorted_scores)
-print(unique_scores)
+To sort the scores from lowest to highest, you can use .sort() with a compare function, which arranges the numbers in proper numeric order.
 
+To remove duplicate scores, you can use a Set, which automatically filters out duplicates, and then convert it back to an array.
 
-char_array = ['h', 'e', 'l', 'l', 'o']
+     Given a string of characters stored in an array:
 
-char_count = len(char_array)
-reversed_chars = char_array[::-1]
-joined_string = ''.join(char_array)
+To count how many characters there are, you can check the .length property, which returns the total number of elements.
 
-print(char_count)
-print(reversed_chars)
-print(joined_string)
+To reverse the order of characters, .reverse() instantly flips the array so the last character becomes the first.
 
-itinerary = ["Paris", "Rome", "Berlin"]
+To join them into a complete word or sentence, you can use .join("") or .join(" ") depending on whether you want spaces.
 
-itinerary.insert(0, "London")
-itinerary.pop()
-is_in_itinerary = "Rome" in itinerary
+     For a travel itinerary planner:
 
-print(itinerary)
-print(is_in_itinerary)
+To add a destination at the beginning, you can use .unshift(), which inserts an item at index 0.
 
+To remove the last destination, .pop() works perfectly because it deletes the final element in the list.
 
-student_names = ["Zoro", "Lemuel", "Armen", "Ereh", "Olives", "Mao", "Frankenstein"]
+To check if a certain location is included, .includes() can confirm whether that destination is part of the array.
 
-alphabetical_names = sorted(student_names)
-top_5_names = alphabetical_names[:5]
+     For alphabetizing student names using sort() and slice():
 
-print(alphabetical_names)
-print(top_5_names)
+.sort() arranges all the names in proper alphabetical order automatically.
+
+.slice(0, 5) can then be used to extract just the top 5 names from the sorted list without modifying the original array.
+
+     Filtering only even numbers from an integer array:
+
+A built-in method like .filter() makes it easy by letting you keep only the numbers that pass a condition—here,
+num % 2 === 0. This instantly gives you an array containing just the even values.
+
