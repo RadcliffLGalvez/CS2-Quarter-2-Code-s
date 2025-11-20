@@ -1,0 +1,35 @@
+destinations = []
+
+d1 = input("Destination 1: ")
+d2 = input("Destination 2: ")
+d3 = input("Destination 3: ")
+d4 = input("Destination 4: ")
+d5 = input("Destination 5: ")
+
+destinations.append(d1)
+destinations.append(d2)
+destinations.append(d3)
+destinations.append(d4)
+destinations.append(d5)
+
+print("\nOriginal Travel Itinerary:")
+print("1.", destinations[0])
+print("2.", destinations[1])
+print("3.", destinations[2])
+print("4.", destinations[3])
+print("5.", destinations[4])
+
+print("\nLet us update your 2nd and 5th destinations.")
+
+new2 = input("Enter a new destination for position 2: ")
+new5 = input("Enter a new destination for position 5: ")
+
+destinations[1] = new2
+destinations[4] = new5
+
+print("\nUpdated Travel Itinerary:")
+print("1.", destinations[0])
+print("2.", destinations[1])
+print("3.", destinations[2])
+print("4.", destinations[3])
+print("5.", destinations[4])
